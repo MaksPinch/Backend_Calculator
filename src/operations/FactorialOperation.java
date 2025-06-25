@@ -17,3 +17,6 @@ public class FactorialOperation implements Operation {
         return result;
     }
 }
+
+
+

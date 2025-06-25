@@ -29,6 +29,9 @@ public class CalculationLogic {
                 if (b == 0) throw new ArithmeticException("Zero division error!");
                 yield a / (b / 100);
             }
+
+            case
+
             default -> throw new IllegalArgumentException("Unknown operator: " + operator);
         };
 }
