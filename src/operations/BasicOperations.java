@@ -1,4 +1,5 @@
 package operations;
+import exceptions.DivisionByZeroException;
 public class BasicOperations {
     public static double add(double a, double b) {
         return a + b;
@@ -9,7 +10,8 @@ public class BasicOperations {
     public static double multiply(double a, double b) {
         return a * b;
     }
-    public static double divide(double a, double b) {
+    public static double divide(double a, double b) throws DivisionByZeroException {
+        if (b == 0) throw new DivisionByZeroException();
         return a / b;
     }
     public static int mod(int a, int b) {
